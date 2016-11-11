@@ -18,7 +18,8 @@
     "standard": "^8.5.0"
   },
   "dependencies": {
-    "highland": "^2.10.1"
+    "highland": "^2.10.1",
+    "vue": "^2.0.5"
   },
   "standard": {
     "parser": "babel-eslint",
