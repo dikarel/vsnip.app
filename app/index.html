@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../assets/semantic.min.css" />
+  <title>v-snip</title>
+  <script>
+    const Clipboard = require('../assets/clipboard.min.js')
+    const $ = require('../assets/jquery.min.js')
+
+    $(function () {
+      new Clipboard('[data-clipboard-text]')
+    })
+  </script>
+</head>
+
+<body>
+  <form class="ui form" style="padding: 8px">
+    <div class="field">
+      <div class="ui icon input">
+        <i class="search icon"></i>
+        <input type="text" placeholder="Search...">
+      </div>
+    </div>
+  </form>
+
+  <button class="ui button" data-clipboard-text="<button class='ui button'>button</button>">button</button>
+
+  <div style="display: inline-block" data-clipboard-text="<marquee>YAAA</marquee>">
+    <div class="ui large buttons" style="pointer-events: none">
+      <button class="ui button">One</button>
+      <div class="or"></div>
+      <button class="ui button">Two</button>
+    </div>
+  </div>
+</body>
+
+</html>
