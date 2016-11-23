@@ -1,4 +1,4 @@
-const Vue = require('../assets/js/vue.min')
+const Vue = require('vue/dist/vue')
 const snippets = require('../services/snippets')
 const copy = require('copy-to-clipboard')
 const toast = require('../services/toast')

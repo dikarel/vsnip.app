@@ -1,4 +1,4 @@
-const Vue = require('../assets/js/vue.min')
+const Vue = require('vue/dist/vue')
 
 // A list of snippets
 Vue.component('snippet-list', {
