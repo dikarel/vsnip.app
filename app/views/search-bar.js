@@ -9,11 +9,13 @@ Vue.component('search-bar', {
     queryChanged
   },
   template:
-    '<div>' +
-    '  <div class="ui input">' +
-    '    <input type="text" placeholder="Search" v-model="query" v-on:input="queryChanged">' +
+    '<div class="ui form search-bar">' +
+    '  <div class="field">' +
+    '    <div class="ui icon input">' +
+    '      <i class="search icon"></i>' +
+    '      <input type="text" placeholder="Search UI components" v-model="query" v-on:input="queryChanged" autofocus="autofocus">' +
+    '    </div>' +
     '  </div>' +
-    '  <hr/>' +
     '</div>'
 })
 
