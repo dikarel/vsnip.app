@@ -1,1 +1,5 @@
-require('./test')
+require('./app')
+require('./snippet-list')
+require('./search-bar')
+require('./snippet')
+require('./toast')

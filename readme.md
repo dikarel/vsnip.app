@@ -16,6 +16,8 @@ yarn start  # Start vsnip
 
 ## Todo
 
+- [ ] Search snippets
+- [ ] Copy to clipboard
 - [ ] Semantic UI snippets
 - [ ] Bootstrap snippets
 - [ ] Foundation snippets
@@ -25,6 +27,8 @@ yarn start  # Start vsnip
 - [ ] Fuzzy search
 - [ ] Entire-page snippets
 - [ ] Code editor integration
+
+![Concept](concept.png)
 
 ## Resources
 
