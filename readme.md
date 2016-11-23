@@ -6,12 +6,10 @@ Visual snippet copy-paste tool
 
 ## Quickstart
 
-Install [yarn](https://yarnpkg.com)
-
 ```bash
-yarn        # Install dependencies
-yarn test   # Run tests
-yarn start  # Start vsnip
+npm install # Install dependencies
+npm test    # Run tests
+npm start   # Start vsnip
 ```
 
 ## Todo
