@@ -1,8 +1,6 @@
-// @flow
-
 const fs = require('fs')
 const path = require('path')
-const snippetsDir = path.join(__dirname, '..', 'assets', 'snippets')
+const snippetsDir = path.join(__dirname, '..', '..', 'snippets')
 let snippets = null
 
 // Return whether or not snippets have been loaded
@@ -23,7 +21,8 @@ function load () {
 // Search snippets by id
 function search (query) {
   if (!snippets) return []
-  if (!query || query.length < 2) return snippets
+  if (!query) return snippets
+  if (query.length < 2) return []
   return snippets.filter(snippet => snippet.id.indexOf(query) >= 0)
 }
 
