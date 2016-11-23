@@ -1,0 +1,5 @@
+test:
+  image: mhart/alpine-node
+  commands:
+    - npm install
+    - npm run test
