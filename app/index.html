@@ -1,27 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-  <link rel="stylesheet" href="../assets/styles/semantic.min.css" />
-  <title>v-snip</title>
+  <title>Visual Snippets</title>
 </head>
 
 <body>
-  <form class="ui form" style="padding: 8px; text-align: center">
-    <div class="field">
-      <div class="ui icon input">
-        <i class="search icon"></i>
-        <input type="text" placeholder="Search..." autofocus="autofocus">
-      </div>
-    </div>
+  <div id="app"></div>
 
-    <p style="text-align: center">Click an element below to copy HTML snippet</p>
-  </form>
-
-  <hr/>
-  <div id="snippets" style="padding: 8px"></div>
-
-  <script>require('../views/app')</script>
+  <script>
+    const Vue = require('./assets/js/vue.min')
+    require('./views')
+    new Vue({
+      el: '#app',
+      template: '<app></app>'
+    })
+  </script>
 </body>
 
 </html>
