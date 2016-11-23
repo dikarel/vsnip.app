@@ -3,6 +3,15 @@
   cursor: pointer;
   vertical-align: middle;
 }
+
 .ui.items > .item:hover {
   background: #eee;
+}
+
+.ui.items > .item:active {
+  background: #ccc;
+}
+
+.ui.nag {
+  position: absolute;
 }

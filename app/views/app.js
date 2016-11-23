@@ -18,9 +18,9 @@ Vue.component('app', {
   },
   template:
     '<div>' +
+    '  <toast :text="toastText"/>' +
     '  <search-bar @query="queryChanged"/>' +
     '  <snippet-list :snippets="snippets" @select="snippetSelected"/>' +
-    '  <toast :text="toastText"/>' +
     '</div>'
 })
 
