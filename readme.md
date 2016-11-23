@@ -9,14 +9,19 @@ Visual snippet copy-paste tool
 ```bash
 npm install # Install dependencies
 npm test    # Run tests
-npm start   # Start vsnip
+npm start   # Run vsnip locally
+npm build   # Build/package vsnip
 ```
+
+![Demo](demo.gif)
 
 ## Todo
 
-- [ ] Search snippets
-- [ ] Copy to clipboard
+- [ ] Automated releases
+- [ ] Paste snippets directly into code editor
 - [ ] Semantic UI snippets
+- [ ] Unit tests
+- [ ] Acceptance tests
 - [ ] Bootstrap snippets
 - [ ] Foundation snippets
 - [ ] Font Awesome snippets
@@ -24,9 +29,6 @@ npm start   # Start vsnip
 - [ ] HTML preprocessor snippets
 - [ ] Fuzzy search
 - [ ] Entire-page snippets
-- [ ] Code editor integration
-
-![Concept](concept.png)
 
 ## Resources
 

@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "electron app/main",
-    "watch": "webpack-dev-server --hot --inline",
-    "fix": "standard --fix",
+    "start": "NODE_ENV=development electron app/main",
+    "build": "electron-packager . --all --asar --overwrite --out bin",
     "test": "standard && htmllint snippets/*.html app/index.html"
   },
   "devDependencies": {
     "electron": "^1.4.8",
+    "electron-packager": "^8.3.0",
     "electron-reload": "^1.0.3",
     "htmllint-cli": "^0.0.5",
     "pre-push": "^0.1.1",

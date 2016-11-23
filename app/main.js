@@ -1,12 +1,12 @@
-// @flow
-
 const {BrowserWindow, app} = require('electron')
 const path = require('path')
 const url = require('url')
 let mainWindow
 
-// Auto-reload on file change
-require('electron-reload')(__dirname)
+// Auto-reload on file change whilst developing
+if (process.env.NODE_ENV) {
+  require('electron-reload')(__dirname)
+}
 
 function createWindow () {
   mainWindow = new BrowserWindow({width: 800, height: 600})
