@@ -2,7 +2,7 @@
 
 Visual snippet copy-paste tool
 
-[![Build Status](https://drone.io/github.com/dikarel/vsnip.js/status.png)](https://drone.io/github.com/dikarel/vsnip.js/latest)
+[![Build Status](https://travis-ci.org/dikarel/vsnip.js.svg?branch=master)](https://travis-ci.org/dikarel/vsnip.js)
 
 ## Quickstart
 
