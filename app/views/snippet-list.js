@@ -11,9 +11,7 @@ Vue.component('snippet-list', {
   template:
     '<div class="ui divided items">' +
     '  <div v-for="snippet in snippets" class="item" @click="select(snippet)">' +
-    '    <div class="middle aligned content" style="pointer-events: none">' +
-    '      <div v-html="snippet.code"></div>' +
-    '    </div>' +
+    '    <div class="middle aligned content" v-html="snippet.code"></div>' +
     '  </div>' +
     '</div>'
 })

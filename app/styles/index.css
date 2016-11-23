@@ -1,7 +1,15 @@
-.ui.items > .item {
-  height: 72px;
+.ui.items .item {
   cursor: pointer;
-  vertical-align: middle;
+}
+
+.ui.items .item .content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  pointer-events: none;
+  margin: none;
+  padding: none;
+  margin: 16px;
 }
 
 .ui.items > .item:hover {
