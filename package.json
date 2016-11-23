@@ -13,9 +13,13 @@
     "electron": "^1.4.8",
     "electron-reload": "^1.0.3",
     "htmllint-cli": "^0.0.5",
+    "pre-push": "^0.1.1",
     "standard": "^8.5.0"
   },
   "dependencies": {
     "copy-to-clipboard": "^3.0.5"
-  }
+  },
+  "pre-push": [
+    "test"
+  ]
 }
