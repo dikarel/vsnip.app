@@ -3,12 +3,12 @@ const events = new EventEmitter()
 const TEXT_CHANGED = 'toast/TEXT_CHANGED'
 let toastEndTimer = null
 
-// Show toast notification for 5 seconds
+// Show toast notification for 2 seconds
 // Overrides previous toast display
 module.exports.show = (notificationText) => {
   if (toastEndTimer) clearTimeout(toastEndTimer)
   events.emit(TEXT_CHANGED, notificationText)
-  toastEndTimer = setTimeout(() => events.emit(TEXT_CHANGED, ''), 5000)
+  toastEndTimer = setTimeout(() => events.emit(TEXT_CHANGED, ''), 2000)
 }
 
 // Return a handle to toast-related events

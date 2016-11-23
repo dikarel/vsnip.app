@@ -6,8 +6,12 @@ Vue.component('toast', {
     'text'
   ],
   template:
-    '<div v-if="text" class="ui nag" style="display: block">' +
-    '  <span class="title">{{text}}</span>' +
-    '  <i class="close icon"></i>' +
-    '</div>'
+    '<transition name="toastfade">' +
+    '  <div v-if="text">' +
+    '    <div class="ui nag">' +
+    '      <span class="title">{{text}}</span>' +
+    '      <i class="close icon"></i>' +
+    '    </div>' +
+    '  </div>' +
+    '</transition>'
 })

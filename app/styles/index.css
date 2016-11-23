@@ -14,4 +14,13 @@
 
 .ui.nag {
   position: absolute;
+  display: block;
+}
+
+.toastfade-enter-active, .toastfade-leave-active {
+  transition: opacity .2s
+}
+
+.toastfade-enter, .toastfade-leave-active {
+  opacity: 0
 }
