@@ -1,0 +1,8 @@
+.ui.items > .item {
+  height: 72px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.ui.items > .item:hover {
+  background: #eee;
+}
