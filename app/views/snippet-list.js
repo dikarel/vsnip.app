@@ -1,5 +1,6 @@
 const Vue = require('../assets/js/vue.min')
 
+// A list of snippets
 Vue.component('snippet-list', {
   props: [
     'snippets'
@@ -17,6 +18,7 @@ Vue.component('snippet-list', {
     '</div>'
 })
 
+// Notify parent when a snippet is selected
 function select (snippet) {
   this.$emit('select', snippet)
 }

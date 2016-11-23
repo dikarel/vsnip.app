@@ -1,5 +1,6 @@
 const Vue = require('../assets/js/vue.min')
 
+// A search bar
 Vue.component('search-bar', {
   data: () => ({
     query: ''
@@ -16,6 +17,7 @@ Vue.component('search-bar', {
     '</div>'
 })
 
+// Notify parent when user inputs query
 function queryChanged () {
   this.$emit('query', this.query)
 }

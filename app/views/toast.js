@@ -1,5 +1,9 @@
 const Vue = require('../assets/js/vue.min')
 
+// A toast notification
 Vue.component('toast', {
-  template: '<div>Button copied to clipboard</div>'
+  props: [
+    'text'
+  ],
+  template: '<div v-if="text" class="toast">{{text}}</div>'
 })
