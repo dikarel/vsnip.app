@@ -1,5 +1,12 @@
 const Vue = require('../assets/js/vue.min')
 
 Vue.component('app', {
-  template: '<h1>APP</h1>'
+  methods: {
+    queryChanged
+  },
+  template: '<search-bar v-on:query="queryChanged"/>'
 })
+
+function queryChanged (e) {
+  console.log(e)
+}
