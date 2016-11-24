@@ -9,7 +9,13 @@ if (process.env.NODE_ENV) {
 }
 
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({
+    width: 320,
+    height: 480,
+    minWidth: 320,
+    minHeight: 480
+  })
+
   mainWindow.on('closed', () => { mainWindow = null })
 
   mainWindow.loadURL(url.format({

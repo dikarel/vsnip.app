@@ -19,10 +19,14 @@ npm build   # Build/package vsnip
 
 - [ ] Automated releases
 - [ ] Paste snippets directly into code editor
+- [ ] Auto-focus search bar when alt-tabbing back
 - [ ] Semantic UI snippets
+- [ ] Bootstrap snippets
+- [ ] MIT license
+- [ ] Improve demo presentability
+- [ ] Project website
 - [ ] Unit tests
 - [ ] Acceptance tests
-- [ ] Bootstrap snippets
 - [ ] Foundation snippets
 - [ ] Font Awesome snippets
 - [ ] Google Material Icon snippets
