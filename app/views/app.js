@@ -44,9 +44,7 @@ function queryChanged (query) {
 }
 
 // Copy to clipboard and display toast when snippet is selected
-// Also re-focus back to search bar
 function snippetSelected ({code}) {
   toast.show('Copied to clipboard')
   copy(code)
-  console.log(this)
 }

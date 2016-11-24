@@ -6,14 +6,15 @@ Vue.component('search-bar', {
     query: ''
   }),
   methods: {
-    queryChanged
+    queryChanged,
+    refocus
   },
   template:
     '<div class="ui form search-bar">' +
     '  <div class="field">' +
     '    <div class="ui icon input">' +
     '      <i class="search icon"></i>' +
-    '      <input type="text" placeholder="Search UI components" v-model="query" v-on:input="queryChanged" autofocus="autofocus">' +
+    '      <input type="text" placeholder="Search UI components" v-model="query" @input="queryChanged" autofocus="autofocus" @blur="refocus">' +
     '    </div>' +
     '  </div>' +
     '</div>'
@@ -22,4 +23,9 @@ Vue.component('search-bar', {
 // Notify parent when user inputs query
 function queryChanged () {
   this.$emit('query', this.query)
+}
+
+// Keep focus on the text field
+function refocus () {
+  setTimeout(() => this.$el.querySelector('input').focus(), 0)
 }

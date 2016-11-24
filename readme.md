@@ -19,7 +19,6 @@ npm build   # Build/package vsnip
 
 - [ ] Automated releases
 - [ ] Paste snippets directly into code editor
-- [ ] Auto-focus search bar when alt-tabbing back
 - [ ] Semantic UI snippets
 - [ ] Bootstrap snippets
 - [ ] MIT license
